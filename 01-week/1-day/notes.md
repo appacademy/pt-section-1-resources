@@ -7,6 +7,16 @@
 
 We will go through the orientation slide deck as a class along with guest speakers from different parts of the program.
 
+## Student Resource Repo and Personal Notes
+
+The student resources repo will be where I post lecture notes and scratch files from lecture. 
+
+We have a template on the repo for you to use as a base for your notetaking and file structure here at app academy. 
+
+A messy file structure is absolutely miserable to work with down the line when you have a lot of different practices and projects. So we have built this to make your lives just a little bit easier!
+
+If you get stuck due to a tech error during this demo process, stick around for office hours if you can, and we will help you get it sorted.
+
 ## Find your why
 
 - [Form Link](https://forms.gle/drgSTXvzLpBgwviD7)
