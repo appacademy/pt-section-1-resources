@@ -1,6 +1,7 @@
 # M1-W1-D1
 
 - Orientation
+- Student Resource Repo
 - Find your why
 
 ## Orientation
