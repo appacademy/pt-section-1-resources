@@ -22,4 +22,4 @@ If you get stuck due to a tech error during this demo process, stick around for 
 
 - [Form Link](https://forms.gle/drgSTXvzLpBgwviD7)
 
-This program is challenging, long, and cab be highly frustrating at times. Learning to code isn't a cakewalk. It's helpful to take note of your motivations and keep that at the forefront of your mind when the going gets tough. Really drill down and ask yourself, "Why do I want to be a software engineer?".
+This program is challenging, long, and can be highly frustrating at times. Learning to code isn't a cakewalk. It's helpful to take note of your motivations and keep that at the forefront of your mind when the going gets tough. Really drill down and ask yourself, "Why do I want to be a software engineer?".
