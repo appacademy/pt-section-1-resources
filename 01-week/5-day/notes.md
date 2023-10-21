@@ -7,6 +7,7 @@ Throughout the day we will be checking in our your tech setup completion :)
 - Mutability
 - Array Methods
 - Nested Loops
+- 2D Arrays
 
 ## Personal Notes Setup
 
