@@ -87,6 +87,15 @@ console.log(str); // 'abcd'
 
 ## Collaborative Problem Solving (1h-ish, Main Room)
 
+### Polya's Problem Solving Framework
+
+- Understand the problem
+- Make a plan
+- Carry out the plan
+- Look back and improve your solution
+
+### Problems to go over
+
 - My Index Of
 - Vowel Counter Recall
 - Has Vowel
