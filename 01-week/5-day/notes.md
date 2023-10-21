@@ -88,6 +88,8 @@ console.log(str); // 'abcd'
 
 ## Collaborative Problem Solving (1h-ish, Main Room)
 
+We will be calling on you to give ideas on problem solving as we tackle these problems. It's totally okay if you are not sure how to approach things, we are all learning here, give it a shot, and we will guide you all to a solution!
+
 ### Polya's Problem Solving Framework
 
 - Understand the problem
