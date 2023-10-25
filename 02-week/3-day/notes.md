@@ -2,13 +2,13 @@
 
 - Helper Functions
 
-## Helper Functions
-
 ## Practice Session 1 (SOLO, 30m)
 
 - Two Dimensional Product
 - Popper
 - Choose Primes
+
+## Helper Functions
 
 ## Practice Session 2 (COLLAB)
 
