@@ -74,6 +74,6 @@ Mocha is a testing suite we'll use to test our code
 - Run `mocha <testFilePath>` to run a single test
 - Run `mocha -g <functionName>` to run all test about a single function
 
-## Collaborative Problem Solving
+## Local JS Project
 
-## Practice Sessions (30m, Solo, On Repeat Until EOD)
+Walkthrough of cloning and setup
