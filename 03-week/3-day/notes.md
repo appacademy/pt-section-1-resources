@@ -78,5 +78,6 @@ console.log(biff, buster);
 
 </td></tr> </table>
 
+## Pairing Demo
 
 ## POJO Basics (UNTIL EOD, PAIRED)
