@@ -116,7 +116,12 @@ Once you and your pair are set up and working on the same repository things get 
 
 Steps for the driver:
 
+- Create a .gitignore file in the root folder of your project repo and on the first line of the file type /node_modules
+
+  ![gitignoreNodeModules](./gitignoreNodeModules.png)
+
 - Save your work
+
 - Type ``git status`` into your terminal, you should see something like this:
 
   ![gitStatus](./gitStatus.JPG)
