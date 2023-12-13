@@ -6,7 +6,7 @@
 
 ## Context Lecture 
 
-The keyword this exists in every function and it evaluates to the object that is currently invoking that function. So the value of this relies entirely on where a function is invoked.
+The keyword `this` exists in every function and it evaluates to the object that is currently invoking that function. So the value of this relies entirely on where a function is invoked.
 
 ```js
 class Dog {
