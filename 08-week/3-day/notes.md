@@ -16,7 +16,6 @@
 - `URIError`: represents an error that occurs when encodeURI() or decodeURI() are passed invalid parameters.
 - `InternalError`: represents an error in the internal JavaScript engine.
 - `AggregateError`: represents an instance where several errors need to represented by an operation.
-- `EvalError`: represents an error with the global eval function.
 
 Focus on these most common Error Types
 
