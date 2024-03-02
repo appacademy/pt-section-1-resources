@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bublez Demo</title>
+    <style>
+      #grandparent {
+        background-color: lightsalmon;
+        padding: 20px;
+      }
+      #parent {
+        background-color: lightblue;
+        padding: 20px;
+      }
+      #child {
+        background-color: lightgreen;
+        padding: 20px;
+      }
+    </style>
+
+    <script src="bubbles.js"></script>
+  </head>
+  <body>
+    <div id="grandparent">
+      Grandparent
+      <div id="parent">
+        Parent
+        <div id="child">Child</div>
+      </div>
+    </div>
+  </body>
+</html>
