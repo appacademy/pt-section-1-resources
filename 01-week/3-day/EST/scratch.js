@@ -4,4 +4,8 @@ function myExample() {
     return 32;
 }
 
+// function myBetterExample() {
+//     return 32 + 32;
+// }
+
 
