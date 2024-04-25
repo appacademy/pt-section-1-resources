@@ -79,13 +79,34 @@ function myExample() {
 // console.log(typeof NaN)
 
 //! --------------------------------------------------------------------
-//*                               Booleans                                      
+//*                               Booleans
 //! --------------------------------------------------------------------
 
-let checkBool = '';
+// let checkBool = true;
 
-if (checkBool) {
+// if (!checkBool || checkBool) {
+//     console.log('This value is true!');
+// } else {
+//     console.log('This value is FAAALLLSSSEEEE');
+// }
+
+//! --------------------------------------------------------------------
+//*                           Short circuiting
+//! --------------------------------------------------------------------
+
+let checkBool = true;
+
+if (checkBool || aowiejfaoiefjaoweijfaoweif) {
+// if (aowiejfaoiefjaoweijfaoweif || checkBool) {
+// if (checkBool && aowiejfaoiefjaoweijfaoweif) {
+
     console.log('This value is true!');
 } else {
     console.log('This value is FAAALLLSSSEEEE');
 }
+
+// if (checkBool && aowiejfaoiefjaoweijfaoweif) { error
+//     console.log('This value is true!');
+// } else {
+//     console.log('This value is FAAALLLSSSEEEE');
+// }
