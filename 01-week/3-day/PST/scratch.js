@@ -82,3 +82,59 @@
 // }
 
 // console.log(counter);
+
+//! --------------------------------------------------------------------
+//*                           Numbers
+//! --------------------------------------------------------------------
+
+// console.log(5 + 5 / 2); // 7.5
+// console.log((5 + 5) / 2); // 5
+// console.log(5 + 5 / 2 * 10); // 2.5 => 25 => 30
+// console.log(5 + 5 / (2 * 10)); // 5 + (5 / (2 * 10) ) => 5.25
+
+// console.log(5 % 1); // 0
+// console.log(5 % 2); // 1
+// console.log(5 % 3); // 2
+// console.log(5 % 4); // 1
+// console.log(5 % 5); // 0
+// console.log(5 % 5023892304);
+
+// let theNumIsEven = 11;
+
+// console.log(theNumIsEven % 2);
+
+// if (theNumIsEven % 2 === 0) {
+//     console.log('Yes this is even!');
+// } else {
+//     console.log('No it is odd!');
+// }
+
+//! --------------------------------------------------------------------
+//*                               Boolean
+//! --------------------------------------------------------------------
+
+// console.log(true);
+// console.log(false);
+// console.log('true');
+// console.log('false');
+
+// let checkBoolVal = false;
+
+// if (checkBoolVal || checkBoolVal) {
+//     console.log('This value is truuueee');
+// } else {
+//     console.log('Nuh uhhhhh not true, false');
+// }
+
+//! --------------------------------------------------------------------
+//*                            Short circuiting
+//! --------------------------------------------------------------------
+
+let checkBoolVal = true;
+
+// if (aoiwjefoaiwejfoiaweijfaowei || checkBoolVal) {
+if (checkBoolVal && aoiwjefoaiwejfoiaweijfaowei) {
+    console.log('This value is truuueee');
+} else {
+    console.log('Nuh uhhhhh not true, false');
+}
