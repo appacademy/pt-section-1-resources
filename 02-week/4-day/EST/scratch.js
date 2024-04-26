@@ -61,7 +61,7 @@
 // kitchen = 'fortnite';
 
 //! --------------------------------------------------------------------
-//*                           Variable Manipulation                                          
+//*                           Variable Manipulation
 //! --------------------------------------------------------------------
 
 // let num = 42;
@@ -85,7 +85,7 @@
 // console.log(year); // 3004
 
 //! --------------------------------------------------------------------
-//*                          Prefix vs Postfix                                           
+//*                          Prefix vs Postfix
 //! --------------------------------------------------------------------
 
 // let preFix = 10;
@@ -103,6 +103,35 @@
 // console.log(postFix); // 11
 
 //! --------------------------------------------------------------------
-//*                            Strings                                         
+//*                            Strings
 //! --------------------------------------------------------------------
 
+// let myName = 'Zaviar';
+// let myStory = "Zaviar's cats are cute";
+// let mySpeech =
+//     'Zaviar\'s cat once said, " This is fun " awefawawefawefawefawefefawefawef  ';
+// console.log(mySpeech);
+// console.log(mySpeech.length);
+
+// let speechLength = mySpeech.length;
+
+// if (speechLength <= 100 && speechLength >= 50) {
+//     console.log('Good work');
+// } else {
+//     console.log('Gotta make that speech a bit longer');
+// }
+
+// console.log(myName[6])
+
+// console.log(myName.length) // attribute -> 6
+// console.log(myName.indexOf("zav"))
+
+let myFirstName = 'Zaviar';
+let myLastName = 'Brown';
+
+// console.log(myFirstName, myLastName);
+// console.log(myFirstName + ' ' + myLastName);
+let myNum = '5';
+console.log(5 + Number(myNum));
+
+console.log(`${myFirstName} ${'Hey yo'}`);
