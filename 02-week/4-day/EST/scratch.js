@@ -93,11 +93,16 @@
 // console.log(++preFix); // 11
 // console.log(preFix); // 11
 
-let postFix = 10;
-console.log(postFix); // 10
-postFix++
-console.log(postFix); // 11
-// console.log(postFix++); // 10
-// console.log(postFix = postFix + 1)
+// let postFix = 10;
+// console.log(postFix); // 10
+// postFix++
+// console.log(postFix); // 11
+// // console.log(postFix++); // 10
+// // console.log(postFix = postFix + 1)
 
-console.log(postFix); // 11
+// console.log(postFix); // 11
+
+//! --------------------------------------------------------------------
+//*                            Strings                                         
+//! --------------------------------------------------------------------
+
