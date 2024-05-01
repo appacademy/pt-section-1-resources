@@ -100,7 +100,7 @@ git clone --branch part-time --single-branch https://github.com/appacademy/aa01-
 ### 9. Run `cd 1_expressions` to move inside the folder you just created
 
 > Seeing an error? Make sure you're using the name of **_your_** folder for this
-> step!!! If you chose to name your folder something else, step #6 should have
+> step!!! If you chose to name your folder something else, step #8 should have
 > shown you that folder name.
 
 ### 10. Run `rm -rf .git`
@@ -109,22 +109,22 @@ This command deletes your folder's connection to the original GitHub repo.
 
 That allows us to safely create our own GitHub repo in its place.
 
-### 9. Run `git init`
+### 11. Run `git init`
 
 This command initializes a new repo in the current folder.
 
-### 10. Run `git add .`
+### 12. Run `git add .`
 
 This command adds all the files in the current folder to git.
 
-### 11. Go to `github.com` and create a new repo
+### 13. Go to `github.com` and create a new repo
 
 It's recommended that you name your repo the same name as the folder you cloned,
 however it's not required for these names to match.
 
 > Note: All repos you create for a/A should be set it to `private`
 
-### 12. Copy the last 4 lines of the `…or create a new repository on the command line` section
+### 14. Copy the last 4 lines of the `…or create a new repository on the command line` section
 
 It will look just like this, except your repo's URL will replace "YOUR URL HERE"
 
@@ -135,7 +135,7 @@ git remote add origin *YOUR URL HERE*
 git push -u origin main
 ```
 
-### 13. Paste the lines you copied into your terminal all together, then hit enter
+### 15. Paste the lines you copied into your terminal all together, then hit enter
 
 > Your terminal has no problem receiving multiple lines at once, so don't worry!
 
