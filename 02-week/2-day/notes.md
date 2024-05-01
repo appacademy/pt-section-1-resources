@@ -4,7 +4,7 @@
 
 `First Class Functions`
 
-- First Class Functions can be
+- First Class Functions/Objects can be
 
   1. Stored in a variable
   2. passed as an argument to a function (next week)
