@@ -139,6 +139,6 @@ git push -u origin main
 
 > Your terminal has no problem receiving multiple lines at once, so don't worry!
 
-### 14. Refresh the browser to verify that you see your practice's files
+### 16. Refresh the browser to verify that you see your practice's files
 
 ### Congratulations, you now have a git-connected practice folder to work and commit with!
