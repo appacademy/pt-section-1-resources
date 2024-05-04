@@ -49,11 +49,8 @@ for (let i = 0; i < dogs.length; i++) {
 Arrays within arrays
 
 ```js
-let twoDimensional = [
-  ['a', 'b', 'c'],
-  ['d', 'e', 'f'],
-  ['g', 'h', 'i'],
-];
+let twoDimensional = [ ['a', 'b', 'c'], ['d', 'e', 'f'], ['g', 'h', 'i'] ];
+
 ```
 
 Much easier to visualize them as a grid!
