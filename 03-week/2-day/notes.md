@@ -112,31 +112,6 @@ console.log(obj[some + variable]); //
 console.log(obj[time.toLowerCase()]); //
 ```
 
-## What JS thinks
-
-```js
-let catObj = {
-    firstCat: 'Momo',
-};
-let whoopsSkippedACat = 'secondCat';
-catObj[whoopsSkippedACat] = 'Tenten'; // JS sees => catObj['secondCat']
-
-//! Object "dot" something MEANS
-// take everything after the dot => whoopsSkippedACat
-// put it in a string => 'whoopsSkippedACat'
-// put that string in brackets => ['whoopsSkippedACat']
-// catObj['whoopsSkippedACat']
-
-//! Object "bracket" something MEANS
-// look at what's in the bracket => [whoopsSkippedACat]
-// is it a variable? => yes!
-//? if yes, find the variables value, then put that in the brackets 
-    //? whoopsSkippedACat = "secondCat"
-    //? ["secondCat"]
-//* if no, use the value as a string in the brackets
-    //* ['whoopsSkippedACat']
-```
-
 ## Which notation should I use? Which version is the best?
 
 Technically either notation is fine, as long as it works
@@ -177,6 +152,31 @@ let whoopsSkippedACat = "secondCat";
 catObj[whoopsSkippedACat] = "Tenten";
 
 console.log(catObj); //
+```
+
+## What JS is thinking
+
+```js
+let catObj = {
+    firstCat: 'Momo',
+};
+let whoopsSkippedACat = 'secondCat';
+catObj[whoopsSkippedACat] = 'Tenten'; // JS sees => catObj['secondCat']
+
+//! Object "dot" something MEANS
+// take everything after the dot => whoopsSkippedACat
+// put it in a string => 'whoopsSkippedACat'
+// put that string in brackets => ['whoopsSkippedACat']
+// catObj['whoopsSkippedACat']
+
+//! Object "bracket" something MEANS
+// look at what's in the bracket => [whoopsSkippedACat]
+// is it a variable? => yes!
+//? if yes, find the variables value, then put that in the brackets 
+    //? whoopsSkippedACat = "secondCat"
+    //? ["secondCat"]
+//* if no, use the value as a string in the brackets
+    //* ['whoopsSkippedACat']
 ```
 
 ## Iterating over an Object
