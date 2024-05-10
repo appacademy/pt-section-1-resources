@@ -9,11 +9,18 @@ A variable called `lights` should evaluate to 'dark'.
 */
 
 let bigObj = { name: 'party', color: 'green', theme: 'dark' }
-// Your code here 
+// Your code here
+let {color, name: type, theme: lights } = bigObj;
+// const newObj = {...bigObj};
+// console.log(newObj)
 
-// console.log(color);   // 'green'
-// console.log(type);    // 'party'
-// console.log(lights);  // 'dark'
+// let newObj=  {type : "party", lights : "dark"}
+// let obj= {...bigObj, ...newObj}
+// console.log(obj)
+
+console.log(color);   // 'green'
+console.log(type);    // 'party'
+console.log(lights);  // 'dark'
 
 
 /******************** DO NOT MODIFY ANY CODE BELOW THIS LINE *****************/

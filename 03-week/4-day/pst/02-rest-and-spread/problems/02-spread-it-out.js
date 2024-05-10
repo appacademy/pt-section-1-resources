@@ -3,7 +3,11 @@ Write a function named `spreadItOut(arr1, arr2)` that accepts two arrays and
 uses spread operator syntax to return a single array.
 */
 
-// Your code here 
+// Your code here
+function spreadItOut (arr1, arr2) {
+  let newArr = [...arr1, ...arr2];
+  return newArr;
+}
 
 // console.log(spreadItOut([3,5,6], [1,2,3])); // => [3,5,6,1,2,3];
 // console.log(spreadItOut([], [1,2,3]));      // => [1,2,3];

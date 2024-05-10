@@ -11,13 +11,18 @@ const obj = {
   green: "hexagon"
 }
 
-// Your code here 
+// Your code here
 
-// console.log(arrRest);   // [1, "two", "3"]
-// console.log(arrSpread); // [1, "two", "3"]
+let [...arrRest] = arr;
+let arrSpread = [...arr];
+let {...objRest} = obj;
+let objSpread = {...obj};
 
-// console.log(objRest);   // { red: "circle", blue: "square", green: "hexagon" }
-// console.log(objSpread); // { red: "circle", blue: "square", green: "hexagon" }
+console.log(arrRest);   // [1, "two", "3"]
+console.log(arrSpread); // [1, "two", "3"]
+
+console.log(objRest);   // { red: "circle", blue: "square", green: "hexagon" }
+console.log(objSpread); // { red: "circle", blue: "square", green: "hexagon" }
 
 
 /******************** DO NOT MODIFY ANY CODE BELOW THIS LINE *****************/
