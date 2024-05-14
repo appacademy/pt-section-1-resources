@@ -1,23 +1,22 @@
-// const someFunction = () => {}
+// const someFunc = () => {}
 
-// someFunction(someArgs)
+// someFunc(someArgs)
 
-// const someArr = [1, 2, 3, 4];
+// someArr = [1, 2, 3];
 
 // someArr.forEach(() => {})
 
-let higherOrderFunction = function(banana){
-    banana();
-  };
+let higherOrderFunction = function(callback){
+  callback();
+};
 
-  let intoAFunction = function() {
-    console.log('I\'m being passed into a function');
-  };
+let intoAFunction = function() {
+  console.log('I\'m being passed into a function');
+};
 
-  let intoAFunctionPt2 = function() {
-    console.log('I\'m ALSO being passed into a function');
-  }
+let intoAFunctionPt2 = function() {
+  console.log('I\'m ALSO being passed into a function');
+}
 
-// higherOrderFunction(intoAFunction);
-// higherOrderFunction(intoAFunctionPt2);
-higherOrderFunction(intoAFunction, intoAFunctionPt2);
+higherOrderFunction(intoAFunction);
+higherOrderFunction(intoAFunctionPt2);
