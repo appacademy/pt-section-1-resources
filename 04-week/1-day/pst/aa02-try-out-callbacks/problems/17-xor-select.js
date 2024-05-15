@@ -32,7 +32,22 @@ console.log(
 *******************************************************************************/
 
 let xorSelect = function(array, cb1, cb2) {
-  // Your code here 
+  // set up a results array
+  // // iterate over the input array
+  // let newArr = array.filter((el) => {
+  //   // check if each element results in true for exactly one of the 2 cb functions
+  //   return ((cb1(el) && !cb2(el)) || ( cb2(el) && !cb1(el)))
+  // })
+  // // return results array
+  // return newArr;
+  let res = [];
+  for (let i = 0; i < array.length; i++) {
+    let el = array[i];
+    if ((cb1(el) && !cb2(el)) || ( cb2(el) && !cb1(el))) {
+      res.push(el);
+    }
+  }
+  return res;
 };
 
 /*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/

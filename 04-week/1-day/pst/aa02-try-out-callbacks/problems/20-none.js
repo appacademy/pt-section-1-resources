@@ -29,7 +29,16 @@ console.log(result4);   // false
 *******************************************************************************/
 
 function none(array, cb) {
-  // Your code here 
+  // iterate over the array
+  for (let i = 0; i < array.length; i++) {
+    // check if el results in true when passed into the cb
+    if (cb(array[i])) {
+      // if it does result if true, return false
+      return false;
+    }
+  }
+  // return true;
+  return true;
 }
 
 /*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/

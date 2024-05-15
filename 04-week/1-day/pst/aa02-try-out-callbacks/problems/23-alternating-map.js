@@ -35,7 +35,22 @@ console.log(alternatingMap(['hEy', 'EVERYone', 'whats', 'uP??'], yell, whisper))
 *******************************************************************************/
 
 function alternatingMap(array, cb1, cb2) {
-  // Your code here 
+  // set up a results array
+  let res = [];
+  // iterate over the input array
+  for (let i = 0; i < array.length; i++) {
+    let el = array[i];
+    // for even indexes, push the result of cb1(el)
+    if (i % 2 === 0) {
+      res.push(cb1(el))
+    } else {
+      // for odds, push the result of cb2(el)
+      res.push(cb2(el))
+    }
+  }
+  return res;
+  // return results array
+  // profit
 }
 
 /*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/

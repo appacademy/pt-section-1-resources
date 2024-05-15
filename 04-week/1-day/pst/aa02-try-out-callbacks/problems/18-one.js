@@ -38,7 +38,18 @@ console.log(result6);   // true
 *******************************************************************************/
 
 function one(array, cb) {
-  // Your code here 
+  // set up a count of `trues`
+  let count = 0;
+  // iterate over the array
+  for (let i = 0; i < array.length; i++) {
+    // check if each el results in true when passed into the cb func
+    if (cb(array[i], i)) {
+      // if so, increment count
+      count++;
+    }
+  }
+  // check if count of trues === 1
+  return count === 1;
 }
 
 /*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/

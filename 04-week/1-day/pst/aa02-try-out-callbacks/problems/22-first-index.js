@@ -23,7 +23,17 @@ console.log(result3); // -1
 *******************************************************************************/
 
 function firstIndex(array, cb) {
-  // Your code here 
+  // iterate over the array
+  for (let i = 0; i < array.length; i++) {
+    let el = array[i];
+    // check if passing in an el to cb results in true
+    if (cb(el)) {
+      // if yes, return the el's index
+      return i;
+    }
+  }
+  // return -1
+  return -1;
 }
 
 /*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/
