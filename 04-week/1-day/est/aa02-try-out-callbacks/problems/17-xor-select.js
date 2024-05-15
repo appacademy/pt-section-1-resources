@@ -32,7 +32,25 @@ console.log(
 *******************************************************************************/
 
 let xorSelect = function(array, cb1, cb2) {
-  // Your code here 
+  // set up a results array
+  let result = [];
+  // iterate over the input array
+  for (let i = 0; i < array.length; i++) {
+    let el = array[i]
+    // check if true for one cb when we pass in an element to both cbs
+    if ((cb1(el) || cb2(el)) && !(cb1(el) && cb2(el))) {
+      result.push(el);
+    }
+  }
+  // return our results array
+  return result;
+
+  // Nate's one line beauty
+  return array.filter(
+    (ele) =>
+      (cb1(ele) === true && cb2(ele) === false) ||
+      (cb1(ele) === false && cb2(ele) === true)
+  );
 };
 
 /*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/

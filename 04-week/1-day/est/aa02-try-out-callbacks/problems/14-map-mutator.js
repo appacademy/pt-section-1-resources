@@ -19,12 +19,20 @@ console.log(arr2); // [ 0, 9, 20 ]
 *******************************************************************************/
 
 function mapMutator(array, cb) {
-  // Your code here 
+  // Iterate over array
+  // array.forEach((el, i) => {
+  //   array[i] = cb(el, i);
+  // });
+  for (let i = 0; i < array.length; i++) {
+    // reassign value in array to be the result of cb(el, i)
+    let el = array[i];
+    array[i] = cb(el, i);
+  }
 }
 
 /*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/
 try {
   module.exports = mapMutator;
-} catch(e) {
+} catch (e) {
   return null;
 }
