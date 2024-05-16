@@ -45,9 +45,29 @@
 
 // console.log(hello);
 
-// if (true) {
-//     let console = "Heyyooo"
-// }
-// return = "YOOOOO"
 
-// console.log(true)
+const countFrom = (n) => {
+    let count = n;
+    const innerFunc = () => {
+        // return count++; // why doesn't this work?
+        return ++count; // why does this work?
+        // count++;
+        // return count;
+    }
+
+    return innerFunc;
+}
+
+let count1 = countFrom(0);
+console.log(count1); // [Function: InnerFunc]
+// console.log(count); // cant access the value
+
+console.log(count1()); // ?
+console.log(count1()); // ?
+console.log(count1()); // ?
+
+let count2 = countFrom(5);
+console.log(count2);
+console.log(count2()); // ?
+console.log(count2()); // ?
+console.log(count1())

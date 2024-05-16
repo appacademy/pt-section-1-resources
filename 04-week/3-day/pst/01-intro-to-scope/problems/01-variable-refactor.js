@@ -16,17 +16,17 @@ BONUS: If you have time after refactoring the variables, feel free to refactor
 the logic to further improve this solution to only use one count object.
 */
 
-var areAnagrams = (word1, word2) => {
-  var result = true
+const areAnagrams = (word1, word2) => {
+  let result = true
 
   if (word1.length !== word2.length) {
     result = false;
     return result;
   }
 
-  var count1 = {};
+  const count1 = {};
 
-  for (var i = 0; i < word1.length; i++) {
+  for (let i = 0; i < word1.length; i++) { // i++ === i += 1 === i = i + 1
     if (count1[word1[i]]) {
       count1[word1[i]]++;
     } else {
@@ -34,29 +34,30 @@ var areAnagrams = (word1, word2) => {
     }
   }
 
-  var count2 = {};
 
-  for (var i = 0; i < word2.length; i++) {
-    if (count2[word2[i]]) {
-      count2[word2[i]]--;
+  for (let i = 0; i < word2.length; i++) {
+    if (count1[word2[i]]) {
+      count1[word2[i]]--;
     } else {
-      count2[word2[i]] = 1;
+      return false;
     }
   }
 
-  for (var char in count1) {
-    if (count1[char] !== count2[char]) {
+  console.log(count1)
+
+  for (let char in count1) {
+    if (count1[char] !== 0) {
       return false;
     }
   }
   return true;
 }
 
-// console.log(areAnagrams("cat", "act"));          // true
-// console.log(areAnagrams("restful", "fluster"));  // true
-// console.log(areAnagrams("cat", "dog"));          // false
-// console.log(areAnagrams("boot", "bootcamp"));    // false
-// console.log(areAnagrams('bott', 'boot'));        // false
+console.log(areAnagrams("cat", "act"));          // true
+console.log(areAnagrams("restful", "fluster"));  // true
+console.log(areAnagrams("cat", "dog"));          // false
+console.log(areAnagrams("boot", "bootcamp"));    // false
+console.log(areAnagrams('bott', 'boot'));        // false
 
 
 /******************** DO NOT MODIFY ANY CODE BELOW THIS LINE *****************/
