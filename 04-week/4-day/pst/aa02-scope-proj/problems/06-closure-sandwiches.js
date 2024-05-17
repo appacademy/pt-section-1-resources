@@ -17,7 +17,14 @@ sandwich2("pb") // => "One sandwich with tomato and pb"
 
 ***********************************************************************/
 
-// Your code here 
+const sandwichMaker = () => {
+  let sandwich = "One sandwich with tomato";
+  function inner (topping) {
+    sandwich += " and " + topping;
+    return sandwich;
+  }
+  return inner;
+}
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 

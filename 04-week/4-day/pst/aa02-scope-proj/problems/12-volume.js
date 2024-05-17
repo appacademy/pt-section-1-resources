@@ -13,7 +13,21 @@ function returned by recVolume should continue to return the original volume.
 
 ***********************************************************************/
 
-// Your code here 
+const recVolume = (h) => {
+  const rectangle = [h];
+  return (side) => {
+    if (rectangle.length < 3) {
+      rectangle.push(side)
+    }
+    if (rectangle.length === 3) {
+      return rectangle.reduce((acc, el) => acc * el)
+      // let vol = 1;
+      // rectangle.forEach(dimension => vol *= dimension)
+      // return vol;
+    }
+    return () => {}
+  }
+}
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
