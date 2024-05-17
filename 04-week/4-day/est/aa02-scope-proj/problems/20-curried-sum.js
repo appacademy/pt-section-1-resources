@@ -43,7 +43,33 @@ AFTER YOU ARE FINISHED WITH THIS PROBLEM, ASK FOR A CODE REVIEW
   be useful
 ***********************************************************************/
 
-// Your code here 
+const curriedSum = (numArgs) => {
+  if (numArgs <= 0) {
+    return null;
+  }
+  let numbers = [];
+  const _curriedSum = (num) => {
+    numbers.push(num);
+    if (numbers.length === numArgs) {
+      return numbers.reduce((x, y) => x + y, 0);
+    } else {
+      return _curriedSum;
+    }
+  };
+  return _curriedSum;
+};
+
+// 1
+const sum1 = curriedSum(4); // returns a function
+console.log(sum1(5) )// returns a function
+console.log(sum1(20)) // returns a function
+console.log(sum1(30)) // returns a function
+console.log(sum1(20)); // => returns 75
+
+// 2
+// this function can also be invoked like this:
+const sum = curriedSum(3)(2)(1)(7); // => returns 10
+console.log(sum)
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
