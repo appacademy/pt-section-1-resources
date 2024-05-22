@@ -14,15 +14,22 @@ return `Recycle Me!`
 */
 
 function shouldRecycle(item) {
-  if (!item.plastic) {
+  debugger
+  if (item.plastic) {
+    debugger
+    if (item.color === 'black') {
+      debugger
+      return 'Currently, cannot be recycled.'
+    }
     return 'Recycle Me!'
-  } else if (item.color === 'black') {
-    return 'Currently, cannot be recycled.'
-  } else if (item.aluminum) {
+  }  else if (item.aluminum) {
+    debugger
     return 'Recycle Me!'
   } else if (item.paper) {
+    debugger
     return 'Recycle Me!'
   }
+  debugger
   return 'Cannot be recycled'
 }
 
