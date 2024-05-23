@@ -12,7 +12,13 @@ range(7, 6); // []
 
 
 function range(start, end) {
-  // Your code here 
+  // base case
+  if (start >= end) return [];
+
+  // recursive case
+  // return [start, ...range(start + 1, end)]
+  let res = [start]
+  return res.concat(range(start + 1, end));
 }
 
 

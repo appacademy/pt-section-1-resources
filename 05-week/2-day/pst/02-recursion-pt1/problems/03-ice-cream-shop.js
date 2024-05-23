@@ -14,10 +14,18 @@ iceCreamShop([], 'honey lavender'); // false
 
 
 function iceCreamShop(flavors, favorite) {
-  // Your code here 
+  //base case(s)
+  // nothing in the array -> return false
+  if (flavors.length === 0) return false;
+  // the last flavor matches our favorite -> return true;
+  let last = flavors.pop(); // recursive step (mutates flavors, removes that last flavor)
+  if (last === favorite) return true;
+
+  // recursive
+  return iceCreamShop(flavors, favorite);
 }
 
-
+// console.log(iceCreamShop(['pistachio', 'green tea', 'chocolate', 'mint chip'], 'green tea')); // true
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
   module.exports = iceCreamShop;

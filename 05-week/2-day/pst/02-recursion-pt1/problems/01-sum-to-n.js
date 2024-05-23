@@ -11,11 +11,18 @@ sumToN(9)  // returns 45
 sumToN(-8)  // returns null
 ***********************************************************************/
 
-
 function sumToN(n) {
-  // Your code here 
-}
+  // edge case
+  if (n < 0) return null;
 
+  // base case
+  if (n === 0) return 0;
+
+  // recursive case
+  let sum = n + sumToN(n - 1)
+  return sum;
+
+}
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {

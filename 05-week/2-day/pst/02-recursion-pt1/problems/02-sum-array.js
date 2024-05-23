@@ -11,9 +11,16 @@ sumArray([1, 2, 3, 4, 5]); // 15
 ***********************************************************************/
 
 function sumArray(arr) {
-  // Your code here 
+  // base case
+  if (arr.length === 0) return 0;
+
+  // recursive
+  // let sum = arr[0] + sumArray(arr.slice(1))
+  let last = arr[arr.length - 1]; // remove and then return the last el or the array (recursive step)
+  let sum = last + sumArray(arr.slice(0, -1));
+  return sum;
 }
-  
+
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
   module.exports = sumArray;
