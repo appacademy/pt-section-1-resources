@@ -20,9 +20,14 @@ fibonacci(10); // 55
 ***********************************************************************/
 
 function fibonacci(n) {
-  // Your code here 
+  // Your code here
+  // base cases
+  if (n === 1 || n === 2) return 1;
+
+  // recursive case
+  return fibonacci(n - 2) + fibonacci(n - 1)
 }
-  
+ //
+console.log(fibonacci(5)) // 5?
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 module.exports = fibonacci;
-  

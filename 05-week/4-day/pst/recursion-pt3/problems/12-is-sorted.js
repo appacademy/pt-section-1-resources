@@ -12,7 +12,9 @@ isSorted([5, 4, 3, 2, 1]); // false
 
 
 function isSorted(arr) {
-  // Your code here 
+  if (arr.length === 1) return true;
+  if (arr[0] > arr[1]) return false;
+  return isSorted(arr.slice(1))
 }
 
 

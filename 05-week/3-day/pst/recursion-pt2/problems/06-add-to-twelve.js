@@ -14,7 +14,15 @@ addToTwelve([1]); // false
 
 
 function addToTwelve(arr) {
-  // Your code here 
+  // base case
+  if (arr.length < 2) return false;
+  // base case pt 2 -> first 2 elements add up to 12
+  if (arr[0] + arr[1] === 12) return true;
+
+  // recursive case
+  // recursive step -> array.slice shortening my array
+  return addToTwelve(arr.slice(1));
+
 }
 
 

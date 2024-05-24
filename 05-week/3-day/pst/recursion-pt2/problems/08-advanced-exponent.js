@@ -41,9 +41,27 @@ times `advancedExponent` is being recursively called.
 
 
 function advancedExponent(b, n) {
-  // Your code here 
+  // Your code here
+  // base cases
+  if (n === 0) return 1;
+  if (n === 1) return b;
+  // recursive cases
+  // if power is even
+  if (n % 2 === 0) {
+    let half = advancedExponent(b, n / 2)
+    // return advancedExponent(b, n / 2) * advancedExponent(b, n / 2) -> bad, adding unncessary stack frames
+    return half * half;
+  } else { // recursive case when power is odd
+    let half = advancedExponent(b, (n - 1) / 2);
+    return b * half * half;
+  }
 }
 
+console.log(advancedExponent(2, 0)); // 1
+console.log(advancedExponent(2, 1)); // 2
+// console.log(advancedExponent(2, 2)); // 4
+// console.log(advancedExponent(2, 3)); // 8
+// console.log(advancedExponent(2, 4)); // 16
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
