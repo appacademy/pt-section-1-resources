@@ -26,7 +26,7 @@ console.log(preserveFunc2('boolean', 'string', 'undefined')); // prints [ undefi
 */
 
 function preserveTypes(array) {
-    // Your code here 
+    return (...args) => array.filter((el) => args.includes(typeof el))
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

@@ -20,6 +20,13 @@
 */
 
 
+// ITERATIVE SOLUTION
+function dynamicSlice(start, end) {
+  return (arr) => {
+    return arr.filter((el, i) => i >= start && i < end)
+  }
+}
+
 // RECURSIVE HELPER FUNCTION IN THE CLOSURE
 // function dynamicSlice(start, end) {
 //   // Your code here
@@ -53,32 +60,32 @@
 // }
 
 // RECURSIVE CLOSURE
-function dynamicSlice(start, end) {
-  // Your code here
-  const startPointer = start;
-  return function recurse(arr, newArr = []) {
-    if (start === end) {
-      start = startPointer;
-      return newArr;
-    }
-    if (start === arr.length) {
-      start = startPointer;
-      return newArr;
-    }
-    if (start < 0) {
-      start = 0;
-      let target = arr[start];
-      newArr.push(target);
-      start++;
-      return recurse(arr, newArr);
-    } else {
-      let target = arr[start];
-      newArr.push(target);
-      start++;
-      return recurse(arr, newArr);
-    }
-  };
-}
+// function dynamicSlice(start, end) {
+//   // Your code here
+//   const startPointer = start;
+//   return function recurse(arr, newArr = []) {
+//     if (start === end) {
+//       start = startPointer;
+//       return newArr;
+//     }
+//     if (start === arr.length) {
+//       start = startPointer;
+//       return newArr;
+//     }
+//     if (start < 0) {
+//       start = 0;
+//       let target = arr[start];
+//       newArr.push(target);
+//       start++;
+//       return recurse(arr, newArr);
+//     } else {
+//       let target = arr[start];
+//       newArr.push(target);
+//       start++;
+//       return recurse(arr, newArr);
+//     }
+//   };
+// }
 
 // const slicer = dynamicSlice(2, 7);
 // console.log(slicer(["kittens", "puppies", "cats", "dogs"])); // prints [ 1, 2 ]

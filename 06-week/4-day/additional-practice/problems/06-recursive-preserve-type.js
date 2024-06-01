@@ -27,12 +27,25 @@ However, for bonus points try to solve it both with recursion and iteration.
 */
 
 function recursivePreserveType(array) {
-    // Your code here 
+    return function inner(type, newArr = [], index = 0) {
+        if (index === array.length) {
+            return newArr;
+        }
+        if (type === (typeof array[index])) {
+            newArr.push(array[index]);
+        }
+        return inner(type, newArr, index + 1);
+    }
 }
+
+// const preserveFunc2 = recursivePreserveType([2, undefined, 'world', { color: 'red' }, true, 3, [4, 5], 'hello', false]);
+// console.log(preserveFunc2('number')); // prints [2, 3]
+// console.log(preserveFunc2('object')); // prints [ { color: 'red' }, [4, 5] ]
+// console.log(preserveFunc2('boolean')); // prints [ true, false ]
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 try {
-    module.exports = recursivePreserveType;
+  module.exports = recursivePreserveType;
 } catch (e) {
-    module.exports = null;
+  module.exports = null;
 }

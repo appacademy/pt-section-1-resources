@@ -1,6 +1,6 @@
 /* Even Number Range
 
-    Write a function that accepts two numbers. 
+    Write a function that accepts two numbers.
     The function should return an array of all even numbers between the two arguments inclusively.
 
     console.log(evenNumberRange(-3, 2)); // prints [-2, 0, 2]
@@ -9,7 +9,12 @@
 */
 
 function evenNumberRange(num1, num2) {
-    // Your code here 
+    // Your code here
+    let arr = [];
+    for (let i = num1; i <= num2; i++) {
+        if (i % 2 === 0) arr.push(i)
+    }
+    return arr;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
