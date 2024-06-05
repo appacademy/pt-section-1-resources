@@ -17,7 +17,7 @@ describe("mostFrequentVowel()", function() {
     fruits = ['apple', 'pear', 'melon', 'coconut'];
     counter = { 'i': 1, 'e': 1 };
     vowel = mostFrequentVowel(fruits, counter);
-    assert.strictEqual(vowel, 'e');
+    assert.strictEqual(vowel, 'e'); // vowel === "e"
     assert.deepStrictEqual(counter, { 'i': 1, 'e': 4, 'o': 3, 'u': 1, 'a': 2 });
 
     fruits = ['apple', 'pear', 'melon'];
