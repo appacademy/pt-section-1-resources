@@ -23,16 +23,16 @@ class Animal {
 
 // juice.makeSound();
 
-class Dog extends Animal {
-  constructor(name, age, color) {
-    super(name, age, color, "bark");
-  }
+// class Dog extends Animal {
+//   constructor(name, age, color) {
+//     super(name, age, color, "bark");
+//   }
 
- 
-}
 
-let chandler = new Dog("Chandler", 4, "yellow");
-chandler.makeSound();
+// }
+
+// let chandler = new Dog("Chandler", 4, "yellow");
+// chandler.makeSound();
 
 
 // class Dog {
@@ -71,3 +71,7 @@ chandler.makeSound();
 // console.log(chandler.print());
 // console.log('------')
 // Dog.printDogs();
+
+// const sum = (...nums) => nums.reduce((acc, el) => {return acc += el}, 0);
+
+// console.log(sum(4, 10, 15, 100, 1000, [4, 7], "Hey"));
