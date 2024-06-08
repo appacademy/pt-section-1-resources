@@ -80,7 +80,7 @@ numberVar = "NUMBER"
 //Comparison operators - how we compare stuff
 //They spit out a true or a false
 
-//  >, <, >=, <= ,        ==     ===
+//  >, <, >=, <= ,        ==     === != !==
 
 //console.log(8 <= 9);
 
