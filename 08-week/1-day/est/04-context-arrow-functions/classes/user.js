@@ -3,9 +3,13 @@ class User {
     this.name = name;
   }
 
+  // changeName = (newName) => {
+  //   return this.name = newName;
+  //   // return this.name;
+  // }
   changeName(newName) {
-    this.name = newName;
-    return this.name;
+    return (this.name = newName);
+    // return this.name;
   }
 }
 
