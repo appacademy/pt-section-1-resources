@@ -1,9 +1,11 @@
 const User = require('./classes/user');
 
 const michelle = new User('Michelle');
+console.log(michelle)
 
 function greetAfterNameChange(changeName, newName) {
   const name = changeName(newName);
+  // const name = michelle.changeName(newName)
 
   console.log(`Hi my name is ${name}`);
 }
