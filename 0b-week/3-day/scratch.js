@@ -26,7 +26,7 @@ while (condition) {
 FOR LOOP SYNTAX
 inside the parenthesis we have three semi colon separated sections
 
-initial expression - variable that the condition is reliant upon. Its run ONE TIME
+initial expression - generally variable that the condition is reliant upon. Its run ONE TIME
 before the loop begins
 
 condition - Is checked every iteration, and the 
@@ -44,7 +44,7 @@ for (initial expression; condition; loop end expression) {
 //     console.log(i)
 // }
 
-let string = "barnacle"
+// let string = "barnacle"
 
 // for (let i = 0; i < string.length; i += 1) {
 //     console.log(string[i]);
