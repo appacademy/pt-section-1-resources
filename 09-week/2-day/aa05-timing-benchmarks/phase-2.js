@@ -1,0 +1,21 @@
+const [addNums, addManyNums] = require("./phase-1");
+
+// Runs `addNums` in 10 increasing increments
+function addNums10(increment) {
+  const res = [];
+  for (let i = 1; i < 11; i++) {
+    res.push(addNums(i * increment));
+  }
+  return res;
+}
+
+// Runs `addManyNums` in 10 increasing increments
+function addManyNums10(increment) {
+  const res = [];
+  for (let i = 1; i < 11; i++) {
+    res.push(addManyNums(i * increment));
+  }
+  return res;
+}
+
+module.exports = [addNums10, addManyNums10];
