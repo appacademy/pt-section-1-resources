@@ -12,7 +12,7 @@ function addNums10Timing(increment) {
 
 function addManyNums10Timing(increment) {
   const res = [];
-  for (let i = 1; i < 11; i++) {
+  for (let i = 1; i < 21; i++) {
     let start = Date.now();
     res.push(addManyNums(i * increment));
     console.log(`${Date.now() - start}`);
@@ -29,3 +29,17 @@ console.log("\n***********\n");
 n = 1000;
 console.log(`addManyNums(${n}): `);
 addManyNums10Timing(5000);
+
+// function addNums100Timing(increment) {
+//   const res = [];
+//   for (let i = 1; i < 101; i++) {
+//     let start = Date.now();
+//     res.push(addNums(i * increment));
+//     console.log(`${Date.now() - start}`);
+//   }
+//   return res;
+// }
+
+// n = 1000000;
+// console.log(`addNums(${n}): `);
+// addNums100Timing(1000000);

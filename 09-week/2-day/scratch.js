@@ -171,14 +171,14 @@
 //   }
 // }
 
-// let increment = 1000;
-// for (let n = increment; n <= 10 * increment; n += increment) {
-//   startTime = Date.now();
-//   printPairSumsThenPrintNums(n);
-//   endTime = Date.now();
+let increment = 1000;
+for (let n = increment; n <= 10 * increment; n += increment) {
+  startTime = Date.now();
+  printPairSumsThenPrintNums(n);
+  endTime = Date.now();
 
-//   console.log(`${endTime - startTime}`);
-// }
+  console.log(`${endTime - startTime}`);
+}
 
 // function createMatrix(max) {
 //   const matrix = [];
