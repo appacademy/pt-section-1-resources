@@ -4,14 +4,16 @@ class Queue {
   }
 
   size() {
-    // returns the length of the queue
+    return this.data.length;
   }
 
   enqueue(ele) {
-    //adds ele to end of queue
+    this.data.push(ele);
   }
 
   dequeue() {
-    //remove the first element
+    // 0n time to shift an array -> inefficient at large n sizes
+    return this.data.shift();
   }
 }
+

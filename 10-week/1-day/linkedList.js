@@ -1,5 +1,5 @@
 class LinkedListNode {
-  constructor(value, next) {
+  constructor(value, next=null) {
     this.value = value;
     this.next = next;
   }
@@ -12,7 +12,7 @@ class LinkedList {
     this.length = 0;
   }
 
-  
+
 }
 
 const ll1 = new LinkedList();
