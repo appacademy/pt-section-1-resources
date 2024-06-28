@@ -13,12 +13,3 @@ console.log(simpleHash("Greg"));
 console.log(simpleHash("abcd"));
 console.log(simpleHash("aadd"));
 
-
-class HashTable {
-    constructor() {
-        this.data = new Array(10);
-        this.count = 8;
-    }
-
-}
-
