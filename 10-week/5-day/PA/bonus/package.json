@@ -1,0 +1,12 @@
+{
+  "name": "compsci-2-practice-bonus",
+  "version": "1.0.0",
+  "description": "",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "App Academy"
+}
