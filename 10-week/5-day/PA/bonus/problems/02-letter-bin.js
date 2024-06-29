@@ -43,25 +43,26 @@ const Letter = require('./letter');
 class LetterBin {
     constructor() {
         // create stack of letters
-        // Your code here 
+        this.letterStack = [];
     }
 
     numLetters() {
         // returns the number of letters in the stack
-        // Your code here 
+        return this.letterStack.length;
     }
 
     addLetter(message) {
         // creates a letter and adds it to the top of the stack
+        const newLetter = new Letter(message);
         // returns the newly created letter
-        // See './problems/letter.js' for the Letter class
-        // Your code here 
+        this.letterStack.push(newLetter);
+        return newLetter;
     }
 
     removeLetter() {
         // removes a letter at the top of the stack
         // returns the removed letter
-        // Your code here 
+        return this.letterStack.pop();
     }
 }
 

@@ -12,51 +12,56 @@ queue. Implement these methods.
 
 ******************************************/
 
-const LetterBin = require('./02-letter-bin');
+const LetterBin = require("./02-letter-bin");
 
 class Node {
-    constructor(value, next) {
-        this.value = value;
-        this.next = next;
-    }
+  constructor(value, next) {
+    this.value = value;
+    this.next = next;
+  }
 }
 
 class LetterRoom {
-    constructor() {
-        // create an empty queue
-        // Hint: you may create helper classes in this file to use
-        // Your code here 
-    }
+  constructor() {
+    // create an empty queue
+    // Hint: you may create helper classes in this file to use
+    this.binQueue = [];
+  }
 
-    getLastBin() {
-        // return the last bin added to the queue
-        // if there are no bins in the queue, return null
-        // Your code here 
-    }
+  getLastBin() {
+    // return the last bin added to the queue
+    // if there are no bins in the queue, return null
+    return this.binQueue.length
+      ? this.binQueue[this.binQueue.length - 1]
+      : null;
+  }
 
-    getFirstBin() {
-        // return the first bin added to the queue
-        // if there are no bins in the queue, return null
-        // Your code here 
-    }
+  getFirstBin() {
+    // return the first bin added to the queue
+    // if there are no bins in the queue, return null
+    return this.binQueue.length ? this.binQueue[0] : null;
+  }
 
-    numBins() {
-        // returns the number of bins in the queue
-        // Your code here 
-    }
+  numBins() {
+    // returns the number of bins in the queue
+    return this.binQueue.length;
+  }
 
-    addBin() {
-        // create a new bin and add it to the end of the queue
-        // returns the newly created bin
-        // WARNING: you cannot add properties to a LetterBin like .next
-        // Your code here 
-    }
+  addBin() {
+    // create a new bin and add it to the end of the queue
+    const newBin = new LetterBin();
+    this.binQueue.push(newBin);
+    // returns the newly created bin
+    return newBin;
+    // WARNING: you cannot add properties to a LetterBin like .next
+  }
 
-    removeBin() {
-        // remove the bin at the beginning of the queue
-        // returns the removed bin
-        // Your code here 
-    }
+  removeBin() {
+    // remove the bin at the beginning of the queue
+    return this.binQueue.shift();
+    // returns the removed bin
+    // Your code here
+  }
 }
 
 module.exports = LetterRoom;

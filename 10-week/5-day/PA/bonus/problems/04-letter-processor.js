@@ -18,23 +18,52 @@ that `LetterBin`'s stack.
 const LetterRoom = require("./03-letter-room");
 
 class LetterProcessor {
-    constructor(maxLettersPerBin) {
-        this.letterRoom = new LetterRoom();
-        this.maxLettersPerBin = maxLettersPerBin;
-    }
+  constructor(maxLettersPerBin) {
+    this.letterRoom = new LetterRoom();
+    this.maxLettersPerBin = maxLettersPerBin;
+  }
 
-    addLetter(message) {
-        // add a letter with the specified message to the last bin added to the letter room
-        // if the last bin added is full, add a new bin to the letter room
-        // Your code here 
+  addLetter(message) {
+    // add a letter with the specified message to the last bin added to the letter room
+    const last = this.letterRoom.getLastBin();
+    if (last) {
+      // if we have a bin
+      // is this bin full?
+      if (last.numLetters() < this.maxLettersPerBin) {
+        // if not full, add to the bin
+        last.addLetter(message);
+      } else {
+        // if the last bin is full, add a new bin
+        const newBin = this.letterRoom.addBin();
+        // adding a letter to that new bin
+        newBin.addLetter(message);
+      }
+    } else {
+      // if the last bin is full, add a new bin
+      const newBin = this.letterRoom.addBin();
+      // adding a letter to that new bin
+      newBin.addLetter(message);
     }
+    // if the last bin added is full, add a new bin to the letter room
+  }
 
-    removeLetter() {
-        // remove a letter from the first bin added to the letter room
-        // if the first bin is empty after removing the letter, remove the bin from the letter room
+  removeLetter() {
+    // remove a letter from the first bin added to the letter room
+    const firstBin = this.letterRoom.getFirstBin();
+    // if the first bin is empty after removing the letter, remove the bin from the letter room
+    if (firstBin) {
+        let letter = firstBin.removeLetter();
+        if (!firstBin.numLetters())  {// if our numLetters is 0
+            // remove that empty bin
+            this.letterRoom.removeBin();
+        }
+        return letter;
+    } else {
         // if there are no more letters, then console.log 'No more letters to process!'
-        // Your code here 
+        console.log('No more letters to process!')
     }
+
+  }
 }
 
 module.exports = LetterProcessor;
