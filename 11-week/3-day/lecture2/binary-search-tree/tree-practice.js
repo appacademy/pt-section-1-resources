@@ -136,6 +136,7 @@ function deleteNodeBST(rootNode, target) {
   if (parent === undefined) return;
 
   let targetNode;
+
   let isLeftChild = false;
   if (!parent) targetNode = rootNode;
   else if (parent.left && parent.left.val === target) {
@@ -169,15 +170,48 @@ function deleteNodeBST(rootNode, target) {
   // Case 3: One child:
   //   Make the parent point to the child
   else {
-    if (targetNode.left) {
-      if (isLeftChild) parent.left = targetNode.left
-      else parent.right = targetNode.left
+    // EDGE CASE FOR WHEN WE'RE DELETING ROOT NODE WITH 1 CHILD
+    if (!parent) {
+      // If there's no parent, then we're deleting the root
+      if (rootNode.left) {
+        // If there's only a left subtree, we'll grab the root's predecessor from there
+        let pred = inOrderPredecessor(rootNode, target);
+        deleteNodeBST(rootNode, pred);
+        rootNode.val = pred;
+      } else { // else if there's only a right subtree, we need to find the in order successor from there
+        let successor = rootNode.right; // initialize successor as the right subtree
+        while (successor) { // move as far left as possible and reassign successor to the left-most node
+          if (successor.left) successor = successor.left;
+          else break;
+        }
+        deleteNodeBST(rootNode, successor.val);
+        rootNode.val = successor.val;
+      }
+    } else if (targetNode.left) {
+      if (isLeftChild) parent.left = targetNode.left;
+      else parent.right = targetNode.left;
     } else {
-      if (isLeftChild) parent.left = targetNode.right
-      else parent.right = targetNode.right
+      if (isLeftChild) parent.left = targetNode.right;
+      else parent.right = targetNode.right;
     }
   }
 }
+
+const a = new TreeNode(10);
+const b = new TreeNode(20);
+const c = new TreeNode(7);
+const d = new TreeNode(6);
+
+const tree = {};
+
+tree.root = d;
+d.right = a;
+a.left = c;
+a.right = b;
+
+console.log("Before:", tree);
+deleteNodeBST(tree.root, 6);
+console.log("After:", tree);
 
 module.exports = {
   findMinBST,
