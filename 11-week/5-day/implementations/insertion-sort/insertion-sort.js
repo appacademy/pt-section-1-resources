@@ -1,4 +1,7 @@
 // Insertion Sort out-of-place
+
+const { sort } = require("../selection-sort/selection-sort");
+
 // Do not modify the original array
 function insertionSort(arr) {
   /*
@@ -11,13 +14,31 @@ function insertionSort(arr) {
   - Pop a value from the array
   - Create a new spot at the end of the array with null to help with comparisons
   - Walk through the sorted array in reverse order
-  - Check if the value to the left is smaller than the new value
+  - Check if the value to the left (in sorted) is smaller than the new value
   - If so, you've reached the insertion point so exit the loop
   - If not shift the value to the right by 1 and continue
   - Insert the unsorted value at the break point
   Return the sorted array
   */
+  const copy = arr.slice();
+  const sorted = [];
 
+  while (copy.length) {
+    console.log(sorted.join(","));
+    const val = copy.pop();
+    sorted[sorted.length] = null;
+    let i = sorted.length - 1;
+    while (i > 0) {
+      if (sorted[i - 1] < val) {
+        break;
+      } else {
+        sorted[i] = sorted[i - 1];
+        i--;
+      }
+    }
+    sorted[i] = val;
+  }
+  return sorted;
   // Your code here
 }
 
@@ -43,7 +64,7 @@ function insertionSortInPlace(arr) {
   let divider = 1;
 
   while (divider < arr.length) {
-    console.log(arr.join(","))
+    console.log(arr.join(","));
 
     let val = arr[divider];
 
@@ -60,7 +81,7 @@ function insertionSortInPlace(arr) {
     arr[i] = val;
     divider++;
   }
-return arr;
+  return arr;
 }
 
 module.exports = [insertionSort, insertionSortInPlace];
