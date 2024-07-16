@@ -57,6 +57,8 @@ function frequencySort(arr) {
     else if (count[a] > count[b]) return 1;
     // case 3: b appears more than a -> a should be before b
     else return -1;
+    // combine cases 2 + 3:
+    // else return count[a] - count[b];
   })
 }
 
