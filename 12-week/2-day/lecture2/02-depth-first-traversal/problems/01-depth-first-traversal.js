@@ -12,11 +12,38 @@ const adjList = {
   3: [2, 4],
   4: [3, 5, 6],
   5: [1, 2, 4],
-  6: [4]
-}
+  6: [4],
+};
 
 function printDepthFirst(start) {
-  // Your code here 
+  // PUSHING ALL NEIGHBORS ONTO THE STACK (Not checking if we've visited the neighbor first)
+  // const stack = [start];
+  // const visited = new Set();
+  // while (stack.length) {
+  //   let num = stack.pop();
+  //   if (visited.has(num)) continue;
+  //   visited.add(num);
+  //   console.log(num);
+  //   for (let neighbor of adjList[num]) {
+  //     stack.push(neighbor);
+  //   }
+  // }
+
+  // CHECK IF WE'VE VISITED NEIGHBOR B4 PUSHING ONTO STACK
+  const stack = [start];
+  const visited = new Set();
+  visited.add(start);
+  while (stack.length) {
+    let num = stack.pop();
+
+    console.log(num);
+    for (let neighbor of adjList[num]) {
+      if (!visited.has(neighbor)) {
+        visited.add(neighbor);
+        stack.push(neighbor);
+      }
+    }
+  }
 }
 
 // console.log("First Test:")
@@ -28,7 +55,6 @@ function printDepthFirst(start) {
 // console.log("Third Test:")
 // printDepthFirst(4); // Prints 1 through 6 in Depth-first order, starting with 4
 //                     // One possible solution:  4, 6, 5, 2, 3, 1
-
 
 /******************** DO NOT MODIFY ANY CODE BELOW THIS LINE *****************/
 module.exports = printDepthFirst;
