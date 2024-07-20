@@ -1,0 +1,15 @@
+{
+  "name": "compsci-3-practice-binary-trees-and-graphs",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "mocha",
+    "watch": "mocha --watch"
+  },
+  "author": "App Academy",
+  "dependencies": {
+    "chai": "^4.3.10",
+    "mocha": "^10.2.0"
+  },
+  "private": true
+}
