@@ -35,3 +35,19 @@
 //When you are using recursion to build something (array, string, etc)
 //1. You have to build it backwards
 //2. Typically (almost always) you will use the return statements to build that thing
+
+function reverseName(name) {
+    let nameArr = name.split('');
+    let lastLetter = nameArr.pop();
+    
+    console.log(lastLetter)
+    
+    if (nameArr.length) {
+      let string = nameArr.join('');
+      reverseName(string);
+    }
+
+    return;
+  }
+  
+  reverseName("marlon")
