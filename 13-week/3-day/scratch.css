@@ -37,3 +37,37 @@ div p {
 
 /* ------------------------lecture 2----------------------------- */
 
+h2 {
+    font-size: 48pt;
+    /* tag/element/type selector */
+}
+
+.best-class {
+    /* class selector */
+}
+
+div.best-class {
+    color: red;
+}
+
+div.some-other-class {
+    color: green;
+}
+
+.best-class.some-other-class {
+    /* compound class selector */
+}
+
+#id-name {
+    /* ID selector */
+}
+
+a[title] {
+    /* attribute selector */
+}
+
+div p {
+    /* descendant selector */
+}
+
+div .best-class {}
