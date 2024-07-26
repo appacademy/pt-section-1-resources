@@ -1,0 +1,104 @@
+/* img {
+    height: 500px;
+    width: 500px;
+    border: 5px solid black;
+    padding: 50px 20px;
+    margin-top: 25px;
+    box-sizing: border-box;
+}
+
+.b {
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    margin: 10px;
+    color: white;
+    font-size: 28pt;
+    text-align: center;
+}
+
+#box2 {
+    position: relative;
+    left: 50px;
+    top: 50px;
+    z-index: -1;
+}
+
+#box3 {
+    position: absolute;
+    top: 700px;
+    left: 100px;
+}
+
+#container {
+    position: relative;
+    height: 2000px;
+}
+
+#box4 {
+    position: fixed;
+    top: 0px;
+}
+
+#box5 {
+    position: sticky;
+    bottom: 100px;
+    top: 100px
+}
+
+
+----------------------------lecture 2------------------------------------
+*/
+
+img {
+  height: 600px;
+  width: 600px;
+  border: 5px solid black;
+  padding: 50px 20px 20px;
+  margin: 25px;
+  box-sizing: border-box;
+}
+
+.b {
+    background-color: chartreuse;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    border: 2px solid black;
+    font-size: 30pt;
+    text-align: center;
+    border-radius: 25px;
+}
+
+#box2 {
+    position: relative;
+    left: 50px;
+    top: -25px;
+    z-index: -1;
+}
+
+.container {
+    position: relative;
+    height: 3000px;
+    border: 2px solid red;
+    display: flex;
+}
+
+#box3 {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin: 0;
+}
+
+#box4 {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
+
+#box5 {
+    position: sticky;
+    top: 10px;
+}
