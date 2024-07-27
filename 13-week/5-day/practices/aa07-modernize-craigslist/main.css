@@ -1,0 +1,136 @@
+.homepage #catAbb,
+.homepage #go,
+.homepage .leftlinks #cl_app_beta,
+.no-js,
+p.more {
+  display: none;
+}
+
+#logo {
+  font-size: 2.5rem;
+}
+
+.homepage-search .querybox {
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  border-bottom: 2px solid #464646;
+  font-size: 16px;
+}
+
+.menu.collapsible > li {
+  cursor: pointer;
+}
+
+.menu.collapsible > li.expand.s ul {
+  display: block;
+}
+
+.menu.collapsible > li ul {
+  display: none;
+}
+
+/* Your code here */
+/* Universal selector */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f5f5f5;
+  color: #464646;
+}
+
+/* tag selectors */
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+}
+
+/* child selector */
+ul > li {
+  list-style: none;
+}
+
+/* PHASE 2 */
+a:visited,
+a:hover,
+a > span:hover {
+  color: #800080;
+}
+
+a:hover,
+a > span:hover {
+  font-weight: bold;
+}
+
+/* PHASE 3 */
+.page-container {
+  max-width: 1200px;
+}
+
+#leftbar, #center, #rightbar {
+  float: left;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+footer {
+  clear: both;
+}
+
+#leftbar, #rightbar {
+  width: 25%;
+}
+
+#center {
+  width: 50%;
+  border: 1px solid #464646;
+  border-radius: 10px;
+}
+
+#center > div {
+  float: left;
+  width: 33%;
+}
+
+#topban h2 {
+  text-align: center;
+}
+
+/* PHASE 4 */
+
+ul.clfooter {
+  text-align: center;
+  border-top: 1px solid gray;
+  padding: 10px 0;
+}
+
+ul.clfooter > li {
+  display: inline;
+  padding-right: 5px;
+}
+
+/* PHASE 5 */
+h4.ban::before {
+  content: "☮";
+  color: #800080;
+  margin-right: 4px;
+}
+
+/* BONUS */
+table.cal td {
+  border: 1px solid #333;
+  text-align: center;
+  color: rgba(0, 0, 0, .5);
+}
+
+table.cal {
+  border-collapse: collapse;
+}
+
+table.cal td a {
+  color: green;
+  font-weight: bold;
+  cursor: pointer;
+}
