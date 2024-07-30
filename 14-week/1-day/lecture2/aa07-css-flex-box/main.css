@@ -6,8 +6,10 @@
     font-size: 42pt;
 
     /* Phase 1 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    /* Your code here 
 }
 
 .example2 {
@@ -16,8 +18,9 @@
     padding: 16px;
 
     /* Phase 2 */
-
-    /* Your code here 
+    display: inline-flex;
+    gap: 8px;
+    align-items: center;
 }
 
 .example2 > button {
@@ -46,13 +49,17 @@
 
     /* Phase 3 */
 
-    /* Your code here 
+    flex: 0 1 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
 }
 
 .example4 {
     /* Phase 4 - Part 1 of 2 */
+    display: flex;
 
-    /* Your code here 
 }
 
 .sidebar {
@@ -60,8 +67,10 @@
     padding: 8px;
 
     /* Phase 4 - Part 2 of 2 */
+    display: flex;
+    flex-direction: column;
 
-    /* Your code here 
+
 }
 .content-area {
     background-color: #E8EFF0;
