@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+}
+
+h1, main, footer {
+    padding: 0 25px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    background-color: #000000;
+    justify-content: space-evenly;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul a {
+    font-size: 18pt;
+    color: #fff
+}
+
+ul a:hover {
+    text-decoration: underline;
+}
+
+.centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
