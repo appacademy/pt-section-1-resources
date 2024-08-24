@@ -1,0 +1,21 @@
+li {
+    list-style-type: none;
+    width: 33%;
+    padding: 10px 15px;
+    margin-bottom: 5px;
+    border-radius: 25px;
+}
+
+/* Your code here */
+
+li[data-type="drinks"] {
+    background-color: blueviolet;
+}
+
+li[data-type="bakery"] {
+    background-color: blanchedalmond;
+}
+
+li[data-type="canned"] {
+    background-color: gray;
+}
