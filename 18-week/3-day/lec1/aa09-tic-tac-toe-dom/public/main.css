@@ -1,0 +1,30 @@
+/* Your code here */
+body > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+div#board {
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    grid-template-rows: repeat(3, 250px);
+    gap: 5px;
+    background-color: black;
+}
+
+div#board > div {
+    background-color: white;
+}
+
+div#button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 760px;
+}
+
+div#button-container > button {
+    font-size: 30pt;
+
+}

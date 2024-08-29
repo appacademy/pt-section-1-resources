@@ -1,0 +1,26 @@
+div#game-board {
+    display: inline-grid;
+    grid-template-columns: repeat(3, 250px);
+    grid-template-rows: repeat(3, 250px);
+    gap: 5px;
+    background-color: black;
+}
+
+div#game-board > div {
+   background-color: white;
+}
+
+body {
+    text-align: center;
+    margin: 0 auto;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 25px;
+}
+
+footer > button {
+    font-size: 26pt;
+}
