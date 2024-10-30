@@ -30,7 +30,7 @@
 
 ## JSX (Javascript Extensible Markup Language)
 
-- JavaScript + HTML
+- JavaScript + HTML-like markup
 - This piece of code, stores a basic unordered list that will display a user's first name and last name. Because I stored this unordered list in a variable called `list` I can reuse it anywhere
 ```jsx
 const list = (
