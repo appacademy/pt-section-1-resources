@@ -6,9 +6,9 @@ import './App.css';
 
 function App() {
   const dispatch = useDispatch();
-  const articles = useSelector(state => state.catState.entries);
+  const cats = useSelector(state => state.catState.entries);
 
-  console.log(articles)
+  console.log(cats)
 
   useEffect(() => {
     dispatch(loadCats());
@@ -16,9 +16,9 @@ function App() {
 
   return (
     <div>
-      <h1>Article List</h1>
+      <h1>Cats List</h1>
       <ol>
-        {articles.map(({ id, name }) => (
+        {cats.map(({ id, name }) => (
           <li key={id}>{name}</li>
         ))}
       </ol>
