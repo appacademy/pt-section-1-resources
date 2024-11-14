@@ -105,10 +105,12 @@ const store = createStore(reducer, preloadedState, enhancer);
 const SET_GAMES = "game/SET_GAME"
 const ADD_GAME = "game/ADD_GAME"
 
-const setGames = (data) => ({
+const setGames = (data) => {
+  return {
     type: SET_GAMES,
     payload: data
-});
+  }
+};
 
 const addGame = (data) => {
     return {
