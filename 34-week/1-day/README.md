@@ -6,11 +6,11 @@
 nums = [1,2,3,4,5]
 doubled = [x*2 for x in nums]
 even_doubled = [x*2 for x in nums if x % 2 == 0]
-even_double_odd_zero = [x*2 if x % 2 == 0 else 0 for x in nums if x != 1]
+even_double_odd_zero_ignore_one = [x*2 if x % 2 == 0 else 0 for x in nums if x != 1]
 
 print(doubled)
 print(even_doubled)
-print(even_double_odd_zero)
+print(even_double_odd_zero_ignore_one)
 
 def is_prime(num):
   for i in range(2, num):
